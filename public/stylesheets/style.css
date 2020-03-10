@@ -5,8 +5,16 @@ body {
 
 a {
   color: #00B7FF;
+  display: block;
+  padding-top: 1rem;
 }
 
 span {
   font-size: 8px;
+}
+
+textarea {
+  width: 80%;
+  height: 5em;
+  resize: none;
 }

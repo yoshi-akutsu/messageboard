@@ -5,6 +5,6 @@ block content
   each val in messages
     p= val.text + " -" + val.user
     span= val.added
-  button(
+  a(
     href='/new'
     ) Submit a new post
