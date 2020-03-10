@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    h1= title
+    form(method='POST' action='/new')
+        p= 'Name: '
+        input(
+            type='text'
+            name='name'
+            placeholder='Enter name'
+        )
+        p= 'Message: '
+        input(
+            type='text'
+            name='message'
+            placeholder='Enter message'
+        )
+        div
+            button(
+                type='submit'
+            ) Submit

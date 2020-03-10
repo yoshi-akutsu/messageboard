@@ -2,6 +2,9 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
   each val in messages
-    li= val.text + " " + val.user + " " + val.added
+    p= val.text + " -" + val.user
+    span= val.added
+  button(
+    href='/new'
+    ) Submit a new post
